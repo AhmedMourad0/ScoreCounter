@@ -106,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
 	@Override
 	protected void onDestroy() {
-		resetButton.setOnClickListener(null);
 		unbinder.unbind();
 		super.onDestroy();
 	}
