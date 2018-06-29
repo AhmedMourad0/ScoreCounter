@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scoreButtonsLeftMargin">24dp</dimen>
+    <dimen name="scoreButtonsRightMargin">24dp</dimen>
+    <dimen name="scoreButtonsBottomMargin">8dp</dimen>
+    <dimen name="pointsTextSize">56sp</dimen>
+    <dimen name="goalsTextSize">24sp</dimen>
+    <dimen name="goalsTextViewStartMargin">4dp</dimen>
+    <dimen name="goalsTextViewEndMargin">0dp</dimen>
+    <dimen name="scorePaneBottomMargin">24dp</dimen>
+    <dimen name="scorePaneTopMargin">16dp</dimen>
+    <dimen name="teamNameTextSize">14sp</dimen>
+    <dimen name="resetButtonBottomMargin">24dp</dimen>
+    <dimen name="dividerWidth">1dp</dimen>
+    <dimen name="teamsPaneBottomMargin">96dp</dimen>
+    <dimen name="teamsPaneTopMargin">24dp</dimen>
+</resources>

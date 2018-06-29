@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Score Counter</string>
+    <string name="action_contact">Contact us</string>
+    <string name="team_a">Team A</string>
+    <string name="zero">0</string>
+    <string name="three_points">+3 POINTS</string>
+    <string name="goal">+1 GOAL</string>
+    <string name="one_point">+1 POINT</string>
+    <string name="team_b">Team B</string>
+    <string name="reset">Reset</string>
+    <string name="team">Team</string>
+    <string name="feedback_subject">A feedback on the Score Counter app</string>
+    <string name="feedback_text">I\'ve tested your great app and i have the following comments about it:</string>
+</resources>
