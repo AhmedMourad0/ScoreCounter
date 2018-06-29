@@ -6,8 +6,8 @@ public class Team {
 	private int points = 0;
 	private int goals = 0;
 
-	private OnPointsChangedListener pointsListener;
-	private OnGoalsChangedListener goalsListener;
+	private OnPointsChangeListener pointsListener;
+	private OnGoalsChangeListener goalsListener;
 
 	public Team(String name) {
 		this.name = name;
@@ -19,7 +19,7 @@ public class Team {
 
 	public void addPoints(final int addition) {
 		points += addition;
-		pointsListener.onPointsChangedListener(points);
+		pointsListener.onPointsChangeListener(points);
 	}
 
 	public int getPoints() {
@@ -28,12 +28,12 @@ public class Team {
 
 	public void setPoints(final int points) {
 		this.points = points;
-		pointsListener.onPointsChangedListener(points);
+		pointsListener.onPointsChangeListener(points);
 	}
 
 	public void addGoal() {
 		goals += 1;
-		goalsListener.onGoalsChangedListener(goals);
+		goalsListener.onGoalsChangeListener(goals);
 	}
 
 	public int getGoals() {
@@ -42,31 +42,31 @@ public class Team {
 
 	public void setGoals(final int goals) {
 		this.goals = goals;
-		goalsListener.onGoalsChangedListener(goals);
+		goalsListener.onGoalsChangeListener(goals);
 	}
 
 	public void reset() {
 		points = 0;
 		goals = 0;
-		pointsListener.onPointsChangedListener(points);
-		goalsListener.onGoalsChangedListener(goals);
+		pointsListener.onPointsChangeListener(points);
+		goalsListener.onGoalsChangeListener(goals);
 	}
 
-	public void setOnPointsChangedListener(OnPointsChangedListener listener) {
+	public void setOnPointsChangeListener(OnPointsChangeListener listener) {
 		this.pointsListener = listener;
 	}
 
-	public void setOnGoalsChangedListener(OnGoalsChangedListener listener) {
+	public void setOnGoalsChangeListener(OnGoalsChangeListener listener) {
 		this.goalsListener = listener;
 	}
 
 	@FunctionalInterface
-	public interface OnPointsChangedListener {
-		void onPointsChangedListener(int newValue);
+	public interface OnPointsChangeListener {
+		void onPointsChangeListener(int newValue);
 	}
 
 	@FunctionalInterface
-	public interface OnGoalsChangedListener {
-		void onGoalsChangedListener(int newValue);
+	public interface OnGoalsChangeListener {
+		void onGoalsChangeListener(int newValue);
 	}
 }

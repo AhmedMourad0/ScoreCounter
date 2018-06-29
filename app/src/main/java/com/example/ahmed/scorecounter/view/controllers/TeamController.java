@@ -81,8 +81,8 @@ public class TeamController extends Controller {
 
 		team = new Team(getArgs().getString(ARG_TEAM_NAME, view.getContext().getString(R.string.team)));
 
-		team.setOnPointsChangedListener(newValue -> pointsTextView.setText(String.valueOf(team.getPoints())));
-		team.setOnGoalsChangedListener(newValue -> goalsTextView.setText(String.valueOf(team.getGoals())));
+		team.setOnPointsChangeListener(newValue -> pointsTextView.setText(String.valueOf(team.getPoints())));
+		team.setOnGoalsChangeListener(newValue -> goalsTextView.setText(String.valueOf(team.getGoals())));
 
 		team.reset();
 
