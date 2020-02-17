@@ -1,8 +1,16 @@
 # Score Counter Project
 
 ## Project Overview
-This's a project for the Android Basics Nanodegree Program.
+ScoreCounter is a mobile app that acts as a refree between you and your stubborn friend.
+
+## Key Concepts
+- Conductor
+- ButterKnife
 
 ## Screenshots
 
-![Screenshot 0](https://github.com/AhmedMouradDev/Android-Basics-Nanodegree_Project-2/blob/master/screenshots/1.jpg?raw=true)
+![Screenshot 0](/screenshots/0.jpg)
+
+![Screenshot 1](/screenshots/1.jpg)
+
+
